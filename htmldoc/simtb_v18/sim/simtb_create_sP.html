@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_create_sP</title>
+  <meta name="keywords" content="simtb_create_sP">
+  <meta name="description" content="simtb_create_sP()  - Initializes parameter structure">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">sim</a> &gt; simtb_create_sP.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\sim&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_create_sP
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_create_sP()  - Initializes parameter structure</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function SIMULATION_PARAMETERS = simtb_create_sP(param_filename, M, nC) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment">   simtb_create_sP()  - Initializes parameter structure
+
+   Usage:
+    &gt;&gt; sP = simtb_create_sP;  
+    &gt;&gt; sP = simtb_create_sP(param_filename);
+    &gt;&gt; sP = simtb_create_sP(param_filename, M, nC);
+    &gt;&gt; sP = simtb_create_sP([], M, nC);
+
+   INPUT: 
+   If no input       Builds parameter structure based on default values
+   param_filename  = parameter filname [OPTIONAL]. If provided, parameter values 
+                     will be revised by definitions in param_filename. 
+   M               = number of subjects [OPTIONAL, default is 10].
+   nC              = number of components [OPTIONAL, default is all sources]
+
+   OUTPUT:
+   sP              = parameter structure
+
+   see also: simtb_params(), simtb_checkparams()</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="../../simtb_v18/helper/simtb_countSM.html" class="code" title="function count = simtb_countSM">simtb_countSM</a>	simtb_countSM() - Determines the number of sources defined in simtb_SMsource()</li><li><a href="../../simtb_v18/helper/simtb_countTT.html" class="code" title="function [TT_count, TT_levels] = simtb_countTT">simtb_countTT</a>	simtb_countTT() - Determines the number and default levels of Tissue Types</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="../../simtb_v18/helper/simtb_params.html" class="code" title="function varargout = simtb_params(P)">simtb_params</a>	simtb_params()  - Provides information on all simulation parameters</li><li><a href="../../simtb_v18/simtb.html" class="code" title="function simtb(varargin)">simtb</a>	simtb()  - Initializes the simtb GUI</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

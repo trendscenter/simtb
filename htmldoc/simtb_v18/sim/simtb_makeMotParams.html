@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_makeMotParams</title>
+  <meta name="keywords" content="simtb_makeMotParams">
+  <meta name="description" content="simtb_makeMotParams()  - Generates motion time series">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">sim</a> &gt; simtb_makeMotParams.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\sim&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_makeMotParams
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_makeMotParams()  - Generates motion time series</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function mp = simtb_makeMotParams(nT, dev, MAX_TRANS, MAX_ROT) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> simtb_makeMotParams()  - Generates motion time series
+                  Uses an AR(1) process (with fixed parameter at p=0.95)
+                  to generate translation in x and y directions and rotation.
+ 
+ Usage:
+       &gt;&gt; mp = simtb_makeMotParams(nT, dev, MAX_TRANS, MAX_ROT)
+
+ INPUTS:
+   nT        = number of TRs (time points)
+   dev       = [1 x 3] vector of standard deviations of Gaussian deviates for [x-trans, y-trans, rotation]
+   MAX_TRANS = furthest from 0 that x or y translation should get
+             (based on simulations: dev=1 and p=0.95 gives max translation of roughly 10 pixels)
+   MAX_ROT   = similar to MAX_TRANS but for rotation in degrees
+
+ OUTPUTS:
+   mp        = [nT x 3] matrix of motion time series (x-pos, y-pos, rotation)
+               x-pos and y-pos are in units of voxels
+               rotation is in units of degrees
+
+ see also: simtb_addMotion()</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="simtb_addMotion.html" class="code" title="function [Dnew, sP, mp] = simtb_addMotion(sP, D, sub)">simtb_addMotion</a>	simtb_addMotion()  - Simulates motion (translation/rotation) of dataset</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

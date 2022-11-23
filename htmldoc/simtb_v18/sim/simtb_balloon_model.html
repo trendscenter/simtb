@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_balloon_model</title>
+  <meta name="keywords" content="simtb_balloon_model">
+  <meta name="description" content="simtb_balloon_model()  - Nonlinear balloon model to generate TCs">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">sim</a> &gt; simtb_balloon_model.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\sim&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_balloon_model
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_balloon_model()  - Nonlinear balloon model to generate TCs</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function tc = simtb_balloon_model(eTC, TR, P) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> simtb_balloon_model()  - Nonlinear balloon model to generate TCs
+
+ Usage:
+  &gt;&gt; [tc] = simtb_balloon_model(eTC, P, x);
+
+ INPUTS:
+ eTC          = [nT x 1] event vector
+ TR           = repetition time (in seconds)
+ P (OPTIONAL) = vector of parameters for the BOLD generation model 
+
+ OUTPUTS:
+ tc   =  [nT x 1] component time course
+
+ see also: simtb_TCsource()
+ -----------------------------------------------------------------
+ SEE:
+ Friston, A Mechelli, R Turner, CJ Price, 2000. Nonlinear responses in fMRI:
+ the Balloon model, Volterra kernels, and other hemodynamics. Neuroimage.
+
+ Buxton, R.B. and Wong, E.C. and Frank, L.R. 1998. Dynamics of blood flow
+ and oxygenation changes during brain activation: the balloon model. Magnetic Resonance in Medicine.
+ -----------------------------------------------------------------
+ hemodynamic model
+
+ INPUTS:
+   eTC    - input (neuronal activity)                    (eTC)
+   P      - free parameter vector
+   P(1) - signal decay                                   d(ds/TR)/ds)
+   P(2) - autoregulation                                 d(ds/TR)/df)
+   P(3) - transit time                                   (t0)
+   P(4) - exponent for Fout(v)                           (alpha)
+   P(5) - resting oxygen extraction                      (E0)
+   P(6) - echo time   (seconds)                          (TE)
+   P(7) - input efficacies                               d(ds/TR)/du)
+
+   TR - repeat time (sec)                                (TR)
+
+ OUTPUTS:
+ tc      - output BOLD signal</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="simtb_TCsource.html" class="code" title="function [tc, MDESC, P, PDESC] = simtb_TCsource(eTC, TR, sourceType, P)">simtb_TCsource</a>	simtb_TCsource()  - Contains the definitions for the generation of TCs</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

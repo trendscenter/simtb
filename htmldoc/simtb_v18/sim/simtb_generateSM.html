@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_generateSM</title>
+  <meta name="keywords" content="simtb_generateSM">
+  <meta name="description" content="simtb_generateSM()  - Generates a SM based on definitions in simtb_SMsource()">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">sim</a> &gt; simtb_generateSM.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\sim&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_generateSM
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_generateSM()  - Generates a SM based on definitions in simtb_SMsource()</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function [SM,TT] = simtb_generateSM(sourceID, nV, offset_x, offset_y, theta, spread) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> simtb_generateSM()  - Generates a SM based on definitions in simtb_SMsource()
+
+ Usage:
+  &gt;&gt; [SM,TT] = simtb_generateSM(sourceID, nV);  
+  &gt;&gt; [SM,TT] = simtb_generateSM(sourceID, nV, offset_x, offset_y, theta, spread);
+  
+ INPUTS:
+ sourceID   = ID of source to generate
+ nV         = number of 1-D voxels; image will be nV x nV
+ offset_x   = offset in x (in pixels) [OPTIONAL, default = 0]
+ offset_y   = offset in y (in pixels) [OPTIONAL, default = 0]
+ theta      = rotation in degrees [OPTIONAL, default = 0]  
+ spread     = spatial magnification factor [OPTIONAL, default = 1]
+
+ OUTPUTS:
+ SM         = nV x nV spatial mapindices of the selected spatial map
+ TT         = Tissue Type of SM [e.g., 1 = SIGNAL DROPUT, 2 = WM, 3 = GM, 4 = CSF]
+
+ see also: simtb_SMsource()</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="simtb_SMsource.html" class="code" title="function [z,TT] = simtb_SMsource(x, y, randx, randy, randrot, sourceID)">simtb_SMsource</a>	simtb_SMsource()  - Contains the definitions of the 2-D SMs and their tissue types</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="../../simtb_v18/display/simtb_figure_drawSMs.html" class="code" title="function [CH, CMAP] = simtb_figure_drawSMs(H, nV, contour_level, sP, sub)">simtb_figure_drawSMs</a>	simtb_figure_drawSMs() - Shows contours for all defined SMs</li><li><a href="simtb_makeBaseline.html" class="code" title="function Baseline = simtb_makeBaseline(sP, sub)">simtb_makeBaseline</a>	simtb_makeBaseline()  - Generate baseline intensity map for each subject</li><li><a href="simtb_makeSM.html" class="code" title="function SM = simtb_makeSM(sP, sub)">simtb_makeSM</a>	simtb_makeSM()  - Makes component SMs (spatial maps)</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

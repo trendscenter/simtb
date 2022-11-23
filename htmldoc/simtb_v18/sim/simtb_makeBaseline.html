@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_makeBaseline</title>
+  <meta name="keywords" content="simtb_makeBaseline">
+  <meta name="description" content="simtb_makeBaseline()  - Generate baseline intensity map for each subject">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">sim</a> &gt; simtb_makeBaseline.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\sim&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_makeBaseline
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_makeBaseline()  - Generate baseline intensity map for each subject</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function Baseline = simtb_makeBaseline(sP, sub) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> simtb_makeBaseline()  - Generate baseline intensity map for each subject
+                         Based on definitions of all functions in simtb_SMsource().
+
+ Usage:
+  &gt;&gt; Baseline = simtb_makeBaseline(sP, sub)
+
+ INPUTS:
+  sP         = parameter structure used in the simulations
+  sub        = index number for subject
+
+ OUTPUTS:
+ Baseline    = nV x nV spatial map of the signal intensity for selected subject
+
+ see also: simtb_generateSM(), simtb_SMsource()</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="../../simtb_v18/io/simtb_createmask.html" class="code" title="function MASK = simtb_createmask(sP, saveMASKasNIFTI)">simtb_createmask</a>	simtb_createmask()  - Creates data mask with ones inside the head and zeros outside.</li><li><a href="simtb_generateSM.html" class="code" title="function [SM,TT] = simtb_generateSM(sourceID, nV, offset_x, offset_y, theta, spread)">simtb_generateSM</a>	simtb_generateSM()  - Generates a SM based on definitions in simtb_SMsource()</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="../../simtb_v18/display/simtb_figure_model.html" class="code" title="function model_figure = simtb_figure_model(sP, sub, contour_level, WhichPanels)">simtb_figure_model</a>	simtb_figure_model() - Shows SM contours and/or Tissue Model</li><li><a href="simtb_main.html" class="code" title="function simtb_main(sP)">simtb_main</a>	simtb_main()  - Main function for performing simulations</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

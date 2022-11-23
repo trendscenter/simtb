@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_showSMContours</title>
+  <meta name="keywords" content="simtb_showSMContours">
+  <meta name="description" content="simtb_showSMContours()  - Plot SMs as contours">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">display</a> &gt; simtb_showSMContours.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\display&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_showSMContours
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_showSMContours()  - Plot SMs as contours</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function [F, CH] = simtb_showSMContours(SM, contour_level, CMAP, FILL_flag, LEGEND_flag, BLKbg_flag, fignameORAxis) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment">   simtb_showSMContours()  - Plot SMs as contours
+
+   Usage:
+    &gt;&gt; [F, CH] = simtb_showSMContours(SM, contour_level, CMAP, FILL_flag, LEGEND_flag, BLKbg_flag, fignameORAxis)
+
+   INPUTS:
+   SM            = SMs, size = [number of components x number of voxels]
+   contour_level = level at which to draw contours [OPTIONAL, default = 0.5]
+   CMAP          = [nC x 3] matrix of colors for contours [OPTIONAL, default = 'jet']
+                   e.g., for 3 components: [[1 0 0]; [0 1 0], [0 0 1]];
+   FILL_flag     = 1|0, 1 to fill the contours [OPTIONAL, default = 1]
+   LEGEND_flag   = 1|0, 1 to include legend [OPTIONAL, default = 1]
+   BLKbg_flag    = 1|0, 1 to have black background [OPTIONAL, default = 1]
+   fignameORAxis = name of figure (OPTIONAL); Alternatively, can be the handle of an axis to plot on
+
+   OUTPUTS:
+   F             = Figure handle
+   CH            = Contour handles
+
+ see also: simtb_showSM()</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="simtb_figdimension.html" class="code" title="function RECT = simtb_figdimension(aspectratio, scale, alignment)">simtb_figdimension</a>	simtb_figdimension() - Computes position of figure given desired aspect ratio and scale</li><li><a href="simtb_lighten_color.html" class="code" title="function lighter = simtb_lighten_color(rgbvalue, saturation)">simtb_lighten_color</a>	simtb_lighten_color() - Lightens color (reduces saturation)</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+</ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

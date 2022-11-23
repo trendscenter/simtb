@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_match_EST2TRUE</title>
+  <meta name="keywords" content="simtb_match_EST2TRUE">
+  <meta name="description" content="simtb_match_EST2TRUE()  - Matches estimated to true SMs based on maximum R^2 statistics">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">analyze</a> &gt; simtb_match_EST2TRUE.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\analyze&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_match_EST2TRUE
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_match_EST2TRUE()  - Matches estimated to true SMs based on maximum R^2 statistics</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function [mIND, rIND, mSTRENGTH, Rvalues, RMAT] = simtb_match_EST2TRUE(SMest, SMtrue) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment">   simtb_match_EST2TRUE()  - Matches estimated to true SMs based on maximum R^2 statistics
+
+   Usage:
+    &gt;&gt; [mIND, rIND, mSTRENGTH, Rvalues, RMAT] = simtb_match_EST2TRUE(SMest, SMtrue)
+
+   INPUTS:
+   SMest   = [nEC x nVV] estimated SMs, where nEC is the number of 
+                           estimated components and nVV is the number
+                           of voxels to analyze (may be masked data).
+   SMtrue  = [nC x  nVV] true SMs (saved in *_DATA.mat), 
+                           where nC is the true number of sources.
+   
+   NOTE:   SMest and SMtrue can be the mean (or aggregate) SMs across the group 
+           or the SMs for a single subject.  The number of estimated components (nEC)
+           may be greater or less than the number of true sources (nC).
+
+   OUTPUTS:
+   mIND      = indices that best map SMtrue to SMest, i.e., SMest ~ SMtrue(mIND,:);
+   rIND      = indices that best map SMest to SMtrue, i.e., SMtrue ~ SMest(rIND,:);
+   mSTRENGTH = strength of the match, defined as mSTRENGTH = (M1-M2)/(M1+M2), where
+               M1 is the maximum absolute beta coefficient, and M2 is the second greatest. 
+               Betas are determined from the multiple linear regression where true components 
+               are the predictors and the estimated component is the observation.
+               mSTRENGTH ranges from [0,1], 0 indicating a poor match, 1 indicating a good match.
+   Rvalues   = R^2-statistics between the estimated and true components
+   RMAT      = Full R2-statistic matrix, size [nEC x nC].  
+
+  see also: simtb_regression()</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="simtb_regression.html" class="code" title="function [t, beta] = simtb_regression(X,y)">simtb_regression</a>	simtb_regression()  - Performs least squares multiple linear regression</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+</ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

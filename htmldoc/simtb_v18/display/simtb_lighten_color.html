@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_lighten_color</title>
+  <meta name="keywords" content="simtb_lighten_color">
+  <meta name="description" content="simtb_lighten_color() - Lightens color (reduces saturation)">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">display</a> &gt; simtb_lighten_color.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\display&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_lighten_color
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_lighten_color() - Lightens color (reduces saturation)</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function lighter = simtb_lighten_color(rgbvalue, saturation) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment">   simtb_lighten_color() - Lightens color (reduces saturation)
+                           Converts RGB to HSV, 
+                           Reduces saturation,
+                           Converts HSV back to RGB
+
+   USAGE:
+    &gt;&gt; lighter = simtb_lighten_color(rgbvalue, saturation);
+
+   INPUTS: (OPTIONAL)
+   rgbvalue      = rgb color to lighten
+   saturation    = desired fraction of saturation [1 = original, 0 = white]
+
+   OUTPUTS:
+   lighter       = lightened rgb color
+
+   see also: simtb_figure_pickSM(), simtb_showSMCountours()</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="simtb_figure_pickedSM.html" class="code" title="function [CH, CMAP] = simtb_figure_pickedSM(SM_ind, H, nV, contour_level, sP, sub)">simtb_figure_pickedSM</a>	simtb_figure_pickedSM() - Draws and fills SM contours for selected sources</li><li><a href="simtb_pickSM.html" class="code" title="function varargout = simtb_pickSM(varargin)">simtb_pickSM</a>	simtb_pickSM() - GUI for selecting sources</li><li><a href="simtb_showSMContours.html" class="code" title="function [F, CH] = simtb_showSMContours(SM, contour_level, CMAP, FILL_flag, LEGEND_flag, BLKbg_flag, fignameORAxis)">simtb_showSMContours</a>	simtb_showSMContours()  - Plot SMs as contours</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

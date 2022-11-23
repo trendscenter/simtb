@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_spm_Gpdf</title>
+  <meta name="keywords" content="simtb_spm_Gpdf">
+  <meta name="description" content="simtb_spm_Gpdf() - Probability Density Function (PDF) of a Gamma distribution">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">sim</a> &gt; simtb_spm_Gpdf.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\sim&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_spm_Gpdf
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_spm_Gpdf() - Probability Density Function (PDF) of a Gamma distribution</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function f = simtb_spm_Gpdf(x,h,l) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> simtb_spm_Gpdf() - Probability Density Function (PDF) of a Gamma distribution
+
+ FORMAT f = spm_Gpdf(g,h,l)
+
+ x - Gamma-variate   (Gamma has range [0,Inf) )
+ h - Shape parameter (h&gt;0)
+ l - Scale parameter (l&gt;0)
+ f - PDF of Gamma-distribution with shape &amp; scale parameters h &amp; l
+_______________________________________________________________________
+
+ spm_Gpdf implements the Probability Density Function of the Gamma
+ distribution.
+
+ Definition:
+-----------------------------------------------------------------------
+ The PDF of the Gamma distribution with shape parameter h and scale l
+ is defined for h&gt;0 &amp; l&gt;0 and for x in [0,Inf) by: (See Evans et al.,
+ Ch18, but note that this reference uses the alternative
+ parameterisation of the Gamma with scale parameter c=1/l)
+
+           l^h * x^(h-1) exp(-lx)
+    f(x) = ---------------------
+                gamma(h)
+
+ Variate relationships: (Evans et al., Ch18 &amp; Ch8)
+-----------------------------------------------------------------------
+ For natural (strictly +ve integer) shape h this is an Erlang distribution.
+
+ The Standard Gamma distribution has a single parameter, the shape h.
+ The scale taken as l=1.
+
+ The Chi-squared distribution with v degrees of freedom is equivalent
+ to the Gamma distribution with scale parameter 1/2 and shape parameter v/2.
+
+ Algorithm:
+-----------------------------------------------------------------------
+ Direct computation using logs to avoid roundoff errors.
+
+ References:
+-----------------------------------------------------------------------
+ Evans M, Hastings N, Peacock B (1993)
+       &quot;Statistical Distributions&quot;
+        2nd Ed. Wiley, New York
+
+ Abramowitz M, Stegun IA, (1964)
+       &quot;Handbook of Mathematical Functions&quot;
+        US Government Printing Office
+
+ Press WH, Teukolsky SA, Vetterling AT, Flannery BP (1992)
+       &quot;Numerical Recipes in C&quot;
+        Cambridge
+_______________________________________________________________________
+ Copyright (C) 2005 Wellcome Department of Imaging Neuroscience</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="simtb_spm_hrf.html" class="code" title="function [hrf,p] = simtb_spm_hrf(RT,P)">simtb_spm_hrf</a>	simtb_spm_hrf() - Returns a hemodynamic response function</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

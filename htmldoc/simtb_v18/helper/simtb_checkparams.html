@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_checkparams</title>
+  <meta name="keywords" content="simtb_checkparams">
+  <meta name="description" content="simtb_checkparams()  - Checks for appropriate and consistent simulation parameters">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">helper</a> &gt; simtb_checkparams.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\helper&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_checkparams
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_checkparams()  - Checks for appropriate and consistent simulation parameters</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function [errorflag, Message] = simtb_checkparams(sP, OPT) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment">   simtb_checkparams()  - Checks for appropriate and consistent simulation parameters 
+
+   Usage:
+    &gt;&gt; [errorflag, Message] = simtb_checkparams(sP)
+    &gt;&gt; [errorflag, Message] = simtb_checkparams(sP, OPT)
+   INPUTS:
+   sP      = parameter strcutre
+   OPT     = string designating the parameters to check [OPTIONAL, default = 'all']
+             Possible values for OPT and their descriptions follow.
+             'all': checks all parameters.
+               '1': checks output parameters only.
+               '2': checks main parameters only.
+               '3': checks SM setting parameters only.
+               '4': checks TC_Block parameters only.
+               '5': checks TC_Event parameters only.
+               '6': checks Simulating noise parameters only.
+               '7': checks TC_Unique parameters only.
+               '8': checks TC source parameters only.
+   OUTPUTS:
+   errorflag   = indicator for error inout, 0 for no error
+   Message     = string with error information (if any)
+
+   see also: simtb_create_sP(), simtb_main()</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="simtb_countSM.html" class="code" title="function count = simtb_countSM">simtb_countSM</a>	simtb_countSM() - Determines the number of sources defined in simtb_SMsource()</li><li><a href="simtb_countTCmodels.html" class="code" title="function varargout = simtb_countTCmodels">simtb_countTCmodels</a>	simtb_countTCmodels() - Determines the number of TC models defined in simtb_TCsource()</li><li><a href="simtb_countTT.html" class="code" title="function [TT_count, TT_levels] = simtb_countTT">simtb_countTT</a>	simtb_countTT() - Determines the number and default levels of Tissue Types</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="../../simtb_v18/sim/simtb_main.html" class="code" title="function simtb_main(sP)">simtb_main</a>	simtb_main()  - Main function for performing simulations</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_makeTC_block</title>
+  <meta name="keywords" content="simtb_makeTC_block">
+  <meta name="description" content="simtb_makeTC_block()  -  Builds task blocks">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">sim</a> &gt; simtb_makeTC_block.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\sim&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_makeTC_block
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_makeTC_block()  -  Builds task blocks</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function blocks = simtb_makeTC_block(nT, TC_block_n, TC_block_length, TC_block_ISI) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> simtb_makeTC_block()  -  Builds task blocks 
+
+ Usage:
+  &gt;&gt; blocks = simtb_makeTC_block(nT, TC_block_n, TC_block_length,TC_block_ISI)
+
+ INPUTS:
+ nT                = number of time points
+ TC_block_n        = FLAGS (1 for yes, 0 for no) for making TCs with block events
+ TC_block_length   = length of each  block
+ TC_block_ISI      = inter-stimulus-intervals
+
+ OUTPUTS:
+ blocks =  nT x TC_block_n matrix of TC blocks
+
+ see also: simtb_makeTC()</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="simtb_makeTC.html" class="code" title="function [TC, eTC, blocks, events, uevents, sP] = simtb_makeTC(sP, sub)">simtb_makeTC</a>	simtb_makeTC() - Makes component TCs (time courses)</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

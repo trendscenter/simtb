@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_figure_model</title>
+  <meta name="keywords" content="simtb_figure_model">
+  <meta name="description" content="simtb_figure_model() - Shows SM contours and/or Tissue Model">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">display</a> &gt; simtb_figure_model.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\display&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_figure_model
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_figure_model() - Shows SM contours and/or Tissue Model</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function model_figure = simtb_figure_model(sP, sub, contour_level, WhichPanels) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> simtb_figure_model() - Shows SM contours and/or Tissue Model
+
+ USAGE:
+ &gt;&gt; model_figure = simtb_figure_model(sP, sub, contour_level, WhichPanel)
+
+ INPUTS: 
+ sP             = parameter structure
+ sub            = subject index [OPTIONAL, default = 1]
+ contour_level  = level at which to draw contours [OPTIONAL, default = 0.5]
+ WhichPanels    = Type of data to plot, 1 = Map of Sources; 2 = Tissue Type Model; 
+                  [OPTIONAL, default is both([1,2])]
+
+ OUTPUTS:
+ model_figure   = figure handle
+
+   see also: simtb_main()</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="simtb_figdimension.html" class="code" title="function RECT = simtb_figdimension(aspectratio, scale, alignment)">simtb_figdimension</a>	simtb_figdimension() - Computes position of figure given desired aspect ratio and scale</li><li><a href="simtb_figure_pickedSM.html" class="code" title="function [CH, CMAP] = simtb_figure_pickedSM(SM_ind, H, nV, contour_level, sP, sub)">simtb_figure_pickedSM</a>	simtb_figure_pickedSM() - Draws and fills SM contours for selected sources</li><li><a href="../../simtb_v18/sim/simtb_makeBaseline.html" class="code" title="function Baseline = simtb_makeBaseline(sP, sub)">simtb_makeBaseline</a>	simtb_makeBaseline()  - Generate baseline intensity map for each subject</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="../../simtb_v18/sim/simtb_main.html" class="code" title="function simtb_main(sP)">simtb_main</a>	simtb_main()  - Main function for performing simulations</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of simtb_figdimension</title>
+  <meta name="keywords" content="simtb_figdimension">
+  <meta name="description" content="simtb_figdimension() - Computes position of figure given desired aspect ratio and scale">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../../index.html">Home</a> &gt;  <a href="../index.html">simtb_v18</a> &gt; <a href="index.html">display</a> &gt; simtb_figdimension.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../../index.html"><img alt="<" border="0" src="../../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for simtb_v18\display&nbsp;<img alt=">" border="0" src="../../right.png"></a></td></tr></table>-->
+
+<h1>simtb_figdimension
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>simtb_figdimension() - Computes position of figure given desired aspect ratio and scale</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="box"><strong>function RECT = simtb_figdimension(aspectratio, scale, alignment) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+<div class="fragment"><pre class="comment">   simtb_figdimension() - Computes position of figure given desired aspect ratio and scale
+
+   Usage:
+    &gt;&gt; RECT = simtb_figdimension(aspectratio, scale, alignment);
+
+   INPUTS: (OPTIONAL)
+   aspectratio   = aspect ratio is width/height of the desired figure
+   scale         = multiplicative scale, 1 leaves the same size
+   alignment     = horizontal placement, vertical placement
+                       'cm' = center middle
+                       'lt' = left top
+                       'rb' = left bottom
+
+   OUTPUTS:
+   RECT          = figure position used as figure('Position', RECT)
+
+   see also: simtb_figure_params(), simtb_showSM()</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../../matlabicon.gif)">
+<li><a href="simtb_figure_model.html" class="code" title="function model_figure = simtb_figure_model(sP, sub, contour_level, WhichPanels)">simtb_figure_model</a>	simtb_figure_model() - Shows SM contours and/or Tissue Model</li><li><a href="simtb_figure_output.html" class="code" title="function [cmTC, cmSM, comp_figure] = simtb_figure_output(sP, sub, TC, SM, plotit)">simtb_figure_output</a>	simtb_figure_output() - Shows TC/SM output for a given subject</li><li><a href="simtb_figure_params.html" class="code" title="function param_figures = simtb_figure_params(sP, paramlistin)">simtb_figure_params</a>	simtb_figure_params()  - Shows simulation parameters</li><li><a href="simtb_showSM.html" class="code" title="function F = simtb_showSM(SM, CMAP, figname, DIMS, CBAR_flag)">simtb_showSM</a>	simtb_showSM()  - Plot SMs</li><li><a href="simtb_showSMContours.html" class="code" title="function [F, CH] = simtb_showSMContours(SM, contour_level, CMAP, FILL_flag, LEGEND_flag, BLKbg_flag, fignameORAxis)">simtb_showSMContours</a>	simtb_showSMContours()  - Plot SMs as contours</li><li><a href="simtb_showTC.html" class="code" title="function [TC, eTC, blocks, events, uevents] = simtb_showTC(sP, comps, subs)">simtb_showTC</a>	simtb_showTC() - Show generation of TCs (time courses)</li><li><a href="simtb_show_motion.html" class="code" title="function motion_figure = simtb_show_motion(sP, subs)">simtb_show_motion</a>	simtb_show_motion() - Shows translational/rotational motion of subjects</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 29-Mar-2011 15:45:29 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>
